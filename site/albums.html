@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Albums — Our Story</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300..700;1,300..700&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="logo">
+      <span data-couple-names>Our Story</span>
+      <small data-thread></small>
+    </a>
+    <nav>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="timeline.html">Timeline</a></li>
+        <li><a href="albums.html" aria-current="page">Albums</a></li>
+        <li><a href="film.html" class="nav-film">The Film</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="page-intro wrap">
+  <span class="eyebrow"><span data-thread></span> The Albums</span>
+  <h1>Every time<br>we met.</h1>
+  <p>Tap an album to open it up.</p>
+</section>
+
+<section class="wrap">
+  <div class="albums-grid" data-albums-grid></div>
+</section>
+
+<div class="lightbox" data-lightbox aria-hidden="true">
+  <div class="lightbox-panel">
+    <div class="lightbox-head">
+      <div>
+        <h3 data-lb-title></h3>
+        <p data-lb-desc style="margin:0;"></p>
+      </div>
+      <button class="lightbox-close" aria-label="Close album">&times;</button>
+    </div>
+    <div class="lightbox-photos" data-lb-photos></div>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p data-footer-note>Made with love, for us.</p>
+    <p>&copy; <span id="year"></span></p>
+  </div>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+<script src="js/albums.js"></script>
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+  document.querySelector("[data-footer-note]").textContent = SITE.footerNote;
+</script>
+</body>
+</html>
