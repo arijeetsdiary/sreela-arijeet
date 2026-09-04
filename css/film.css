@@ -1,0 +1,303 @@
+/* ============================================================
+   THE FILM PAGE — cinematic, dark, Netflix-inspired pastiche
+   ============================================================ */
+
+.film-body {
+  background: var(--film-bg);
+  color: var(--film-ink);
+}
+
+:root {
+  --film-bg: #120a0d;
+  --film-ink: #f6ece5;
+  --film-ink-soft: rgba(246, 236, 229, 0.78);
+  --film-crimson: #8c1f2f;
+}
+
+.film-body .site-header {
+  background: linear-gradient(180deg, rgba(18, 10, 13, 0.9), rgba(18, 10, 13, 0));
+  border-bottom-color: transparent;
+  position: absolute;
+  width: 100%;
+}
+.film-body .site-header.is-solid {
+  background: rgba(18, 10, 13, 0.92);
+  backdrop-filter: blur(10px);
+}
+.film-body .logo,
+.film-body .nav-links a {
+  color: var(--film-ink);
+}
+.film-body .nav-links a[aria-current="page"] {
+  color: var(--gold);
+}
+.film-body .nav-toggle span {
+  background: var(--film-ink);
+}
+@media (max-width: 780px) {
+  .film-body .nav-links {
+    background: var(--film-bg);
+  }
+}
+
+.film-hero {
+  position: relative;
+  height: 100vh;
+  min-height: 620px;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+}
+
+.film-media {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: var(--film-bg);
+}
+.film-media video,
+.film-media .film-media-fallback {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.film-media-fallback {
+  background:
+    radial-gradient(ellipse at 70% 20%, rgba(140, 31, 47, 0.45), transparent 55%),
+    radial-gradient(ellipse at 20% 80%, rgba(198, 161, 91, 0.25), transparent 50%),
+    var(--film-bg);
+}
+.film-media::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(0deg, var(--film-bg) 4%, rgba(18,10,13,0.55) 34%, rgba(18,10,13,0.15) 60%, rgba(18,10,13,0.5) 100%);
+}
+
+.film-hero-inner {
+  position: relative;
+  z-index: 1;
+  padding: 0 32px 96px;
+  max-width: var(--max);
+  margin: 0 auto;
+  width: 100%;
+}
+
+.film-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  font-family: var(--heavy);
+  font-size: 13px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 22px;
+}
+.film-badge .film-badge-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 5px;
+  background: var(--film-crimson);
+  color: #fff;
+  font-family: var(--heavy);
+  font-weight: 900;
+  font-size: 13px;
+}
+
+.film-title {
+  font-family: var(--heavy);
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: clamp(34px, 6.2vw, 74px);
+  line-height: 0.98;
+  letter-spacing: -0.01em;
+  max-width: 16ch;
+  margin-bottom: 20px;
+  color: var(--film-ink);
+}
+
+.film-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--film-ink-soft);
+  margin-bottom: 22px;
+}
+.film-meta span:not(:last-child)::after {
+  content: "•";
+  margin-left: 18px;
+  color: var(--gold);
+}
+
+.film-synopsis {
+  max-width: 52ch;
+  font-size: 17px;
+  color: var(--film-ink-soft);
+  margin-bottom: 34px;
+}
+
+.film-actions {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.btn-play {
+  background: var(--film-ink);
+  color: var(--film-bg);
+  font-family: var(--heavy);
+  font-weight: 800;
+  font-size: 16px;
+  padding: 15px 30px;
+  border-radius: 6px;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+.btn-play:hover {
+  background: #fff;
+  transform: translateY(-1px);
+}
+.btn-play svg {
+  width: 18px;
+  height: 18px;
+}
+
+.btn-info {
+  background: rgba(120, 108, 104, 0.38);
+  color: var(--film-ink);
+  font-family: var(--heavy);
+  font-weight: 700;
+  font-size: 16px;
+  padding: 15px 28px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  backdrop-filter: blur(6px);
+  transition: background 0.2s ease;
+}
+.btn-info:hover {
+  background: rgba(120, 108, 104, 0.55);
+}
+
+/* -----------------------------------------
+   ROW — "More from our story"
+------------------------------------------ */
+.film-row-section {
+  padding: 12px 0 100px;
+}
+.film-row-title {
+  font-family: var(--heavy);
+  font-weight: 800;
+  font-size: 20px;
+  margin-bottom: 18px;
+  padding: 0 32px;
+  max-width: var(--max);
+  margin-left: auto;
+  margin-right: auto;
+}
+.film-row {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  padding: 4px 32px 20px;
+  scroll-snap-type: x proximity;
+}
+.film-row::-webkit-scrollbar {
+  height: 6px;
+}
+.film-row::-webkit-scrollbar-thumb {
+  background: rgba(246, 236, 229, 0.2);
+  border-radius: 4px;
+}
+.film-card {
+  scroll-snap-align: start;
+  flex: 0 0 260px;
+  border-radius: 8px;
+  overflow: hidden;
+  min-height: 150px;
+  position: relative;
+  box-shadow: 0 20px 40px -24px rgba(0,0,0,0.7);
+  transition: transform 0.3s ease;
+}
+.film-card:hover {
+  transform: scale(1.03);
+}
+.film-card .placeholder {
+  background: linear-gradient(155deg, #3a1c22, #1c0f12 70%);
+  color: rgba(246, 236, 229, 0.75);
+  height: 150px;
+}
+.film-card-label {
+  position: absolute;
+  left: 14px;
+  bottom: 12px;
+  font-family: var(--heavy);
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--film-ink);
+  z-index: 1;
+}
+
+/* -----------------------------------------
+   VIDEO MODAL
+------------------------------------------ */
+.video-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  background: rgba(6, 3, 4, 0.94);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease;
+}
+.video-modal.is-open {
+  opacity: 1;
+  pointer-events: auto;
+}
+.video-modal-inner {
+  position: relative;
+  width: min(1100px, 92vw);
+  aspect-ratio: 16 / 9;
+  background: #000;
+  box-shadow: 0 40px 100px rgba(0,0,0,0.6);
+}
+.video-modal-inner iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.video-modal-close {
+  position: absolute;
+  top: -46px;
+  right: 0;
+  background: none;
+  border: none;
+  color: var(--film-ink);
+  font-size: 30px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 6px;
+}
+
+.film-body .site-footer {
+  border-top-color: rgba(246, 236, 229, 0.12);
+}
+.film-body .site-footer p {
+  color: rgba(246, 236, 229, 0.5);
+}

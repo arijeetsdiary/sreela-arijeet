@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Story</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300..700;1,300..700&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="logo">
+      <span data-couple-names>Our Story</span>
+      <small data-thread></small>
+    </a>
+    <nav>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="timeline.html">Timeline</a></li>
+        <li><a href="albums.html">Albums</a></li>
+        <li><a href="film.html" class="nav-film">The Film</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-media">
+    <div class="placeholder"><span>Add your favourite photo of the two of you here (assets/images/hero.jpg)</span></div>
+  </div>
+  <div class="hero-inner">
+    <h1 id="hero-title">Sreelajoyoti &amp; Arijeet,<br><em>one story.</em></h1>
+    <p id="hero-subtext">Every message, every trip, every ordinary Tuesday — this is the story we're still writing.</p>
+    <a href="timeline.html" class="btn btn-primary">Read our timeline</a>
+  </div>
+  <div class="scroll-cue"><span data-thread></span> Scroll</div>
+</section>
+
+<section class="doors-section">
+  <div class="wrap">
+    <div class="doors-head">
+      <span class="eyebrow"><span data-thread></span> Three ways in</span>
+      <h2>Wherever you start, it's the same story.</h2>
+    </div>
+    <div class="doors-grid">
+      <a href="timeline.html" class="door">
+        <div class="placeholder"><span>Timeline cover photo</span></div>
+        <div class="door-content">
+          <span class="eyebrow">From the beginning</span>
+          <h3>The Timeline</h3>
+          <p>Every milestone, in order — from the first message to today.</p>
+          <span class="door-arrow">Walk through it →</span>
+        </div>
+      </a>
+      <a href="albums.html" class="door">
+        <div class="placeholder"><span>Albums cover photo</span></div>
+        <div class="door-content">
+          <span class="eyebrow">Every meeting</span>
+          <h3>The Albums</h3>
+          <p>Photos from every trip, every visit, every reason we found to be together.</p>
+          <span class="door-arrow">Browse the albums →</span>
+        </div>
+      </a>
+      <a href="film.html" class="door">
+        <div class="placeholder"><span>Film cover photo</span></div>
+        <div class="door-content">
+          <span class="eyebrow">The feature presentation</span>
+          <h3>The Film</h3>
+          <p>All of it, cut together — press play.</p>
+          <span class="door-arrow">Watch it →</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p data-footer-note>Made with love, for us.</p>
+    <p>&copy; <span id="year"></span></p>
+  </div>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+  document.getElementById("hero-subtext").textContent = SITE.heroSubtext;
+  document.querySelector("[data-footer-note]").textContent = SITE.footerNote;
+  if (SITE.heroImage) {
+    document.querySelector(".hero-media").innerHTML =
+      `<img src="${SITE.heroImage}" alt="" style="width:100%;height:100%;object-fit:cover;">` +
+      document.querySelector(".hero-media").innerHTML;
+  }
+</script>
+</body>
+</html>
