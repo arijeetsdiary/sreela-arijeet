@@ -25,7 +25,7 @@ const SITE = {
   tagline: "Sreelajoyoti & Arijeet, one story.",
   heroSubtext:
     "Every message, every trip, every ordinary Tuesday - this is the story we're still writing.",
-  heroImage: "", // e.g. "assets/images/hero.jpg" — leave blank for placeholder
+  heroImage: "assets/images/hero.jpg", // e.g. "assets/images/hero.jpg" — leave blank for placeholder
   footerNote: "Made with love, for us.",
 };
 
