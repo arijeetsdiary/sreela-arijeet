@@ -83,7 +83,7 @@ const ALBUMS = [
   {
     title: "First family meetup",
     description: "A get-together that was sudden, unexpected, and somehow exactly right.",
-    cover: "assets/images/2_First_family_meetup.jpg",
+    cover: "assets/images/Cover_First_family_meetup.jpg",
     photos: [
       { image: "assets/images/1_First_family_meetup.jpg", caption: "Add a caption for this photo." },
       { image: "assets/images/2_First_family_meetup.jpg", caption: "Add a caption for this photo." },
