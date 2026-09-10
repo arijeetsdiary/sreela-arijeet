@@ -85,10 +85,10 @@ const ALBUMS = [
     description: "A get-together that was sudden, unexpected, and somehow exactly right.",
     cover: "",
     photos: [
-      { image: "", caption: "Add a caption for this photo." },
-      { image: "", caption: "Add a caption for this photo." },
-      { image: "", caption: "Add a caption for this photo." },
-      { image: "", caption: "Add a caption for this photo." },
+      { image: "assets/images/1_First_family_meetup.jpg", caption: "Add a caption for this photo." },
+      { image: "assets/images/2_First_family_meetup.jpg", caption: "Add a caption for this photo." },
+      { image: "assets/images/3_First_family_meetup.jpg", caption: "Add a caption for this photo." },
+      { image: "assets/images/4_First_family_meetup.jpg", caption: "Add a caption for this photo." },
     ],
   },
   {
