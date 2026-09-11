@@ -39,7 +39,7 @@ const TIMELINE = [
     date: "December 2025",
     title: "The family meetup",
     text: "A sudden get-together that neither of us planned for, and neither of us forgot.",
-    image: "",
+    image: "assets/images/Album_1_First_family_meetup/Cover_First_family_meetup.jpg",
   },
   {
     date: "January 2026",
