@@ -131,6 +131,27 @@ const ALBUMS = [
   },
 ];
 
+const REFLECTIONS = [
+  {
+    title: "The Family Meetup",
+    date: "December [YEAR]",
+    his: "",
+    hers: "",
+  },
+  {
+    title: "First Meeting",
+    date: "Easter 2026",
+    his: "",
+    hers: "",
+  },
+  {
+    title: "The Birthday Surprise",
+    date: "[ADD DATE]",
+    his: "I hadn't told her I was coming. I remember standing at the door running through what I'd say, and then completely forgetting all of it the second she opened it and just stood there for a second before it registered. That look on her face is the whole reason the trip was worth planning in secret.\n\nWe didn't really have an agenda after that. Sunday we just got in the car and drove, no real destination, stopping wherever looked worth stopping for. Monday we did it again. It sounds simple written down like that, but there's something about being in a car together with nowhere in particular to be that says more about a relationship than any big gesture could.\n\nBoth evenings we had dinner with her brother, and by the second night it didn't feel like I was visiting anymore, it felt like I was just there, part of the week, part of her life in Perth rather than a guest passing through it. We ended one of the nights at the theatre watching Spiderman, and somewhere in the middle of it, popcorn between us, I remember thinking I wanted a lot more ordinary evenings exactly like that one.",
+    hers: "",
+  },
+];
+
 /* -----------------------------------------
    THE FILM PAGE (Netflix-style)
 ------------------------------------------ */
