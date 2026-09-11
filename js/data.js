@@ -82,7 +82,7 @@ const TIMELINE = [
 const ALBUMS = [
   {
     title: "First family meetup",
-    dates: "25 December 2025",
+    dates: "Date: 25 December 2025",
     description: "A get-together that was sudden, unexpected, and somehow exactly right.",
     cover: "assets/images/Album_1_First_family_meetup/Cover_First_family_meetup.jpg",
     photos: [
