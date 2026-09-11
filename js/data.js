@@ -51,25 +51,25 @@ const TIMELINE = [
     date: "April 2026",
      title: "Meeting in person",
     text: "The first time we stood in the same room instead of texting from different ones.",
-    image: "",
+    image: "assets/images/Timeline/Timeline_Cover_Meeting_in_person.JPG",
   },
   {
     date: "April 2026",
     title: "The first trip",
     text: "Our first real trip together, a long drive down the coast from Perth.",
-    image: "",
+    image: "assets/images/Timeline/Timeline_Cover_The_first_trip.JPG",
   },
   {
     date: "April 2026",
     title: "The proposal",
     text: "The evening I asked, standing at Elizabeth Quay as the sun went down.",
-    image: "assets/images/Album_2_Perth_during_Easter_2026/Cover_Perth_during_Easter_2026.jpg",
+    image: "assets/images/Timeline/Timeline_Cover_The_Proposal.JPG",
   },
   {
     date: "Today",
     title: "Still going",
     text: "Where we are now, and everything still ahead of us.",
-    image: "",
+    image: "assets/images/Timeline/Timeline_Cover_Still_going.jpg",
   },
 ];
 
