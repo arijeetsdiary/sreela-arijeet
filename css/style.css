@@ -641,21 +641,6 @@ img {
   margin-bottom: 22px;
   gap: 20px;
 }
-.lightbox-head [data-lb-desc] {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-}
-.album-dates {
-  font-family: var(--serif);
-  font-style: italic;
-  color: var(--gold);
-  font-size: 13.5px;
-}
-.album-desc {
-  color: var(--ink-soft);
-  font-size: 14.5px;
-}
 .lightbox-close {
   background: var(--bg-alt);
   border: none;
