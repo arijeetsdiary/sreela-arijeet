@@ -82,7 +82,8 @@ const TIMELINE = [
 const ALBUMS = [
   {
     title: "First family meetup",
-    description: "A get-together that was sudden, unexpected, and somehow exactly right.",
+    description: "Date: 25 December 2025",
+       "A get-together that was sudden, unexpected, and somehow exactly right.",
     cover: "assets/images/Album_1_First_family_meetup/Cover_First_family_meetup.jpg",
     photos: [
       { image: "assets/images/Album_1_First_family_meetup/1_First_family_meetup.jpg", caption: "Add a caption for this photo." },
@@ -93,7 +94,8 @@ const ALBUMS = [
   },
   {
     title: "Perth during Easter 2026",
-    description: "The first time we met alone, followed by a long drive down to Busselton.",
+    description: "Dates: 01-03 April 2026",
+       "The first time we met alone, followed by a long drive down to Busselton.",
     cover: "assets/images/Album_2_Perth_during_Easter_2026/Cover_Perth_during_Easter_2026.jpg",
     photos: [
       { image: "", caption: "Add a caption for this photo." },
@@ -106,7 +108,8 @@ const ALBUMS = [
   },
   {
     title: "Birthday trip to Perth",
-    description: "A surprise visit for her birthday, a long drive, and a movie to end the day.",
+    description: "Dates: 05-07 September 2026",
+       "A surprise visit for her birthday, a long drive, and a movie to end the day.",
     cover: "assets/images/Album_3_Birthday_trip_to_Perth/Cover_Birthday_trip_to_Perth.jpeg",
     photos: [
       { image: "assets/images/Album_3_Birthday_trip_to_Perth/1_Birthday_trip_to_Perth.jpg", caption: "Add a caption for this photo." },
