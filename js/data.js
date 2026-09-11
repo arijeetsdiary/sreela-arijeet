@@ -99,6 +99,9 @@ const ALBUMS = [
       { image: "", caption: "Add a caption for this photo." },
       { image: "", caption: "Add a caption for this photo." },
       { image: "", caption: "Add a caption for this photo." },
+      { image: "", caption: "Add a caption for this photo." },
+      { image: "", caption: "Add a caption for this photo." },
+      { image: "", caption: "Add a caption for this photo." },
     ],
   },
   {
