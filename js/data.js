@@ -63,7 +63,7 @@ const TIMELINE = [
     date: "April 2026",
     title: "The proposal",
     text: "The evening I asked, standing at Elizabeth Quay as the sun went down.",
-    image: "",
+    image: "assets/images/Album_2_Perth_during_Easter_2026/Cover_Perth_during_Easter_2026.jpg",
   },
   {
     date: "Today",
