@@ -22,8 +22,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function openAlbum(index) {
     const album = ALBUMS[index];
-    lbTitle.textContent = album.title;
-    lbDesc.textContent = album.description || "";
+        lbTitle.textContent = album.title;
+    lbDesc.innerHTML = `
+      ${album.dates ? `<span class="album-dates">${album.dates}</span>` : ""}
+      ${album.description ? `<span class="album-desc">${album.description}</span>` : ""}
+    `;
     lbPhotos.innerHTML = album.photos.map((p) => (
       p.image
         ? `<img src="${p.image}" alt="${p.caption || album.title}">`
