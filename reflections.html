@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reflections — Our Story</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300..700;1,300..700&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="logo">
+      <span data-couple-names>Our Story</span>
+      <small data-thread></small>
+    </a>
+    <nav>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="timeline.html">Timeline</a></li>
+        <li><a href="albums.html">Albums</a></li>
+        <li><a href="reflections.html" aria-current="page">Reflections</a></li>
+        <li><a href="film.html" class="nav-film">The Film</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="page-intro wrap">
+  <span class="eyebrow"><span data-thread></span> Reflections</span>
+  <h1>In our<br>own words.</h1>
+  <p>What each of us was thinking, written down, side by side.</p>
+</section>
+
+<section class="reflections wrap">
+  <div data-reflections-track></div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p data-footer-note>Made with love, for us.</p>
+    <p>&copy; <span id="year"></span></p>
+  </div>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+<script src="js/reflections.js"></script>
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+  document.querySelector("[data-footer-note]").textContent = SITE.footerNote;
+</script>
+</body>
+</html>
