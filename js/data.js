@@ -94,7 +94,7 @@ const ALBUMS = [
   {
     title: "Perth during Easter 2026",
     description: "The first time you met in person, followed by a long drive down to Busselton.",
-    cover: "",
+    cover: "assets/images/Album_2_Perth_during_Easter_2026/Cover_Perth_during_Easter_2026.jpg",
     photos: [
       { image: "", caption: "Add a caption for this photo." },
       { image: "", caption: "Add a caption for this photo." },
