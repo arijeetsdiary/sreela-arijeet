@@ -119,11 +119,11 @@ const ALBUMS = [
   {
     title: "Random & Ridiculous",
     description: "Photos where Mr. and Mrs. Roy look extra beautiful.",
-    cover: "",
+    cover: "assets/images/Album_4_Random_&_Ridiculous/Cover_Random_&_Ridiculous",
     photos: [
-      { image: "", caption: "Add a caption for this photo." },
-      { image: "", caption: "Add a caption for this photo." },
-      { image: "", caption: "Add a caption for this photo." },
+      { image: "assets/images/Album_4_Random_&_Ridiculous/1_Random_&_Ridiculous", caption: "Add a caption for this photo." },
+      { image: "assets/images/Album_4_Random_&_Ridiculous/2_Random_&_Ridiculous", caption: "Add a caption for this photo." },
+      { image: "assets/images/Album_4_Random_&_Ridiculous/3_Random_&_Ridiculous", caption: "Add a caption for this photo." },
     ],
   },
 ];
