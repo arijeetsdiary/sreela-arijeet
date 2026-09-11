@@ -45,7 +45,7 @@ const TIMELINE = [
     date: "January 2026",
      title: "The first message",
     text: "The follow request she accepted, and the conversation that followed.",
-    image: "",
+    image: "assets/images/Timeline_Cover_The_first_message.PNG",
   },
   {
     date: "April 2026",
