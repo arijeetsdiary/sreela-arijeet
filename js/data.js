@@ -117,6 +117,11 @@ const ALBUMS = [
       { image: "assets/images/Album_3_Birthday_trip_to_Perth/3_Birthday_trip_to_Perth.JPG", caption: "Add a caption for this photo." },
       { image: "assets/images/Album_3_Birthday_trip_to_Perth/4_Birthday_trip_to_Perth.jpg", caption: "Add a caption for this photo." },
       { image: "assets/images/Album_3_Birthday_trip_to_Perth/5_Birthday_trip_to_Perth.jpg", caption: "Add a caption for this photo." },
+      { image: "assets/images/Album_3_Birthday_trip_to_Perth/6_Birthday_trip_to_Perth.JPG", caption: "Add a caption for this photo." },
+      { image: "assets/images/Album_3_Birthday_trip_to_Perth/7_Birthday_trip_to_Perth.jpg", caption: "Add a caption for this photo." },
+      { image: "assets/images/Album_3_Birthday_trip_to_Perth/8_Birthday_trip_to_Perth.jpg", caption: "Add a caption for this photo." },
+      { image: "assets/images/Album_3_Birthday_trip_to_Perth/9_Birthday_trip_to_Perth.jpg", caption: "Add a caption for this photo." },
+      { image: "assets/images/Album_3_Birthday_trip_to_Perth/10_Birthday_trip_to_Perth.jpg", caption: "Add a caption for this photo." },
     ],
   },
   {
